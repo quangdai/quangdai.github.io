@@ -1,0 +1,58 @@
+/*=======================
+	Css Sidebar
+=========================*/
+.sidebar{
+	display: inline-block;
+	ul{
+		display: inline-block;
+		li{
+			display: inline-block;
+		}
+		.item{
+			ul{
+				li{
+					&:hover a{
+						color: $color-theme;
+					}
+				}
+			}
+		}
+		.search{
+			form{
+				button{
+					i{ 
+						color: $color-theme;
+					}
+				}
+			}
+		}
+		.recent-post{
+			ul{
+				li{
+					.post-thumb{
+						img{
+							opacity: 1;
+							&:hover{
+								opacity: 0.5;
+							}
+						}
+					}
+					.item{
+						.post-title{
+							&:hover{
+								color: $color-theme;
+							}
+						}
+						p{
+							a{
+								&:hover{
+									color: $color-theme;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

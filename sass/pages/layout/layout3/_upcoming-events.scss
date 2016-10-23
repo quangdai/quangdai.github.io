@@ -1,0 +1,149 @@
+/*---------------------*/
+// * Upcoming Event *
+/*---------------------*/
+
+.upcoming-events {
+    background-image: url("../images/bg-upcoming.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+
+    .upcoming__img {
+        bottom: 26px;
+        left: 0;
+
+        .border__upcoming__img:after {
+            height: 90%;
+        }
+    }
+
+    .upcoming__content {
+        padding-left: 400px;
+
+        .title {
+            padding-right:45px;
+            padding-left: 25px;
+            h2 {
+                font-weight: 700;
+                margin-top: 0;
+            }
+        }
+
+        .content-text {
+            padding-right: 45px;
+            padding-left: 25px;
+            p {
+                line-height: 30px;
+            }
+        }
+    }
+
+    .right-upcoming-events {
+        bottom: 0;
+        right:0;
+    }
+
+    .tab-time {
+        float: left;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            margin-left: -35px;
+
+            li {
+                list-style: none;
+                background-color: #bc8d44;
+                width: 70px;
+                line-height: 45px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .upcoming-events {
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+        }
+
+        .upcoming__content {
+            padding-left: 330px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .upcoming-events {
+        .upcoming__img {
+            position: initial;
+
+            .effect-2:after {
+                display: none;
+            }
+        }
+
+        .upcoming__content {
+            width: 50%;
+            padding: 0 15px;
+            float: left;
+
+            .content-text {
+                padding: 0;
+            }
+        }
+
+        .tab-time {
+            float: none;
+            clear: both;
+
+            .items-time {
+                position: initial;
+                width: 100%;
+                margin-left: 0;
+
+                li {
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .upcoming-events {
+        .upcoming__img {
+            width: 50%;
+            float: left;
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .upcoming-events {
+        .upcoming__img {
+            width: 100%;
+            text-align: center;
+        }
+
+        .upcoming__content {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .upcoming-events {
+        .tab-time {
+            .items-time {
+                li {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

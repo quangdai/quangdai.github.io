@@ -1,0 +1,81 @@
+/*==========================
+  --  Product grid  --
+===========================*/
+.product-grid {
+  .product-content {
+    .list-category {
+      a {
+        &:hover {
+          color: $color-theme;
+        }
+      }
+    }
+  }
+  .action {
+    a {
+      color: $color-theme!important;
+      &:hover {
+        color: #fff!important;
+        background-color: $color-theme;
+      }
+    }
+  }
+  .owl-controls {
+    .owl-nav {
+      .owl-prev, .owl-next {
+        &:hover {
+          background-color: $color-theme;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/*==========================
+  --  Product List  --
+===========================*/
+.list {
+  .item {
+    .add-to-links {
+      .add-to-wishlist, .add-to-compare {
+        color: $color-theme;
+        &:hover {
+          color: #fff;
+          background-color: $color-theme;
+        }
+      }
+    }
+    &:hover {
+      .add-to-links {
+        .add-to-cart {
+          background-color: $color-theme;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/*==========================
+    Page Hot Deals
+===========================*/
+.hot-deals{
+  .timer{
+    .timer-body-block{
+      .table-cell{
+        .tab-val{
+          background-color: $color-theme;
+        }
+      }
+    }
+  }
+}
+/*==========================
+    Page Product Sidebar
+===========================*/
+.product-info{
+  .add-to-cart{
+    background-color: $color-theme;
+  }
+}

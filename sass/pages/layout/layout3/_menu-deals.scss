@@ -1,0 +1,30 @@
+/*---------------------*/
+// * Menu Deals *
+/*---------------------*/
+
+@media (max-width: 1199px) {
+  .menu-deals {
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .menu-deals {
+    .list-menu {
+      .item {
+        width: 50%;
+        &:nth-child(n) {
+          clear: initial;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .menu-deals {
+    .list-menu {
+      .item {
+        width: 100%;
+      }
+    }
+  }
+}

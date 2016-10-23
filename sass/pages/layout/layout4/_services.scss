@@ -1,0 +1,28 @@
+﻿.services.type4 {
+    .services__box {
+    }
+
+    p {
+        text-align: center;
+        padding-bottom: 48px;
+        padding-top: 45px;
+        margin: 0;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        border: 3px #ebebeb solid;
+    }
+
+    .box--icon {
+        margin-right: 10px;
+        font-size: 26px;
+    }
+}
+@media (max-width: 1500px) {
+    .services.type4 {
+        .services__box{
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}

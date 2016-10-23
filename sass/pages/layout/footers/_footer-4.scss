@@ -1,0 +1,85 @@
+﻿/*==============
+End Footer Type4
+==============*/
+.footer.type4{
+    .footer-top{
+        .logo{
+            a{
+                display: inline-block;
+            }
+        }
+        .contact{
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
+            margin-top: 9px;
+            p{
+                color: #26292d;
+                margin-bottom: 8px;
+            }
+            span{
+                a{
+                    text-decoration: none;
+                    color: #26292d;
+                }
+            }
+        }
+        .footer-menu{
+            li{
+                a{
+                    padding: 0 14px;
+                }
+            }
+        }
+    }
+    /*
+    .map-contact{
+        margin-top: 6px;
+        iframe{
+            width: 100%;
+        }
+    }
+    */
+    .map{
+        iframe{
+            height: 300px;
+            width: 100%;
+        }
+    }
+    .footer-bottom{
+        p{
+            display: inline-block;
+            letter-spacing: 0.25px;
+            margin: 22px 0;
+            color: #5f5f5f;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    .footer-contact {
+        a {
+            color: #333;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .social {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .footer.type-4{
+        .footer-top{
+            .footer-menu{
+                li{
+                    margin-bottom: 15px;
+                    a{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}

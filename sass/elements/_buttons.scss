@@ -1,0 +1,40 @@
+/*==========================
+  --  Button --
+===========================*/
+.btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+.btn--xs {
+    height: 35px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+.btn--sm {
+    height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.btn--md {
+    height: 45px;
+    padding-right: 25px;
+    padding-left: 25px;
+    line-height: 2.3;
+}
+.btn--lg {
+    height: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: 2.5;
+}
+.btn1 {}
+.btn2 {}
+.btn3 {}

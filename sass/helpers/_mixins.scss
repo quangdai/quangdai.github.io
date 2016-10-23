@@ -1,0 +1,93 @@
+@mixin element($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin modifier($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+@mixin transition($minute){
+  -moz-transition: all $minute  ease-in-out 0s;
+  -webkit-transition: all $minute ease-in-out 0s;
+  -ms-transition: all $minute ease-in-out 0s;
+  -o-transition: all $minute ease-in-out 0s;
+  transition: all $minute ease-in-out 0s;
+}
+
+@mixin border_radius($border){
+  -moz-border-radius: $border;
+  -webkit-border-radius: $border;
+  border-radius: $border;
+}
+
+@mixin box-sizing{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin box-shadow ($value) {
+  -webkit-box-shadow: $value;
+  -ms-box-shadow: $value;
+  -o-box-shadow: $value;
+  box-shadow: $value;
+}
+@mixin position($top: 0, $right: 0, $bottom: 0, $left: 0){
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin padding($top: null, $right: null, $bottom: null, $left: null){
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin margin($top: null, $right: null, $bottom: null, $left: null){
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin block_layout($top: null, $right: null, $bottom: null, $left: null){
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom; 
+  margin-left: $left;
+}
+@mixin transformX($value){
+    transform:translateX($value);
+    -webkit-transform:translateX($value);
+    -moz-transform:translateX($value);
+    -ms-transform:translateX($value);
+}
+@mixin transformY($value){
+    transform:translateY($value);
+    -webkit-transform:translateY($value);
+    -moz-transform:translateY($value);
+    -ms-transform:translateY($value);
+}
+@mixin transformZ($value){
+  transform:translateZ($value);
+  -webkit-transform:translateZ($value);
+  -moz-transform:translateZ($value);
+  -ms-transform:translateZ($value);
+}
+@mixin buttom($color, $bg-color, $height, $width, $border-radius, $border-size, $border-color, $border-style, $hv-color, $hv-bg-color, $hv-border-color){
+    color:$color;
+    background-color:$bg-color;
+    padding:$height $width;
+    border-radius:$border-radius;
+    border:$border-size $border-color $border-style;
+    @include transition(0.5s);
+    &:hover{
+        color:$hv-color;
+        background-color:$hv-bg-color;
+        border-color:$hv-border-color;
+        @include transition(0.5s);
+    }
+}

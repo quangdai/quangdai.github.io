@@ -1,0 +1,173 @@
+/*---------------------*/
+// * Welcome *
+/*---------------------*/
+.welcome-and-book {
+    background-image: url("../images/bg-welcome.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+
+    .title.type2.dark h2.color-26292d {
+        color: #26292d;
+    }
+
+    .book__table .form-group {
+        &::before {
+            color: #26292d;
+        }
+
+        input {
+            border-color: #c8c7bd;
+        }
+
+        &.book--select {
+            border-color: #c8c7bd;
+        }
+    }
+    //==  ==//
+    .welcome__item {
+        background-image: url("../images/blog-home/03/restaurant-2.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% 100%;
+
+        > div {
+            z-index: 2;
+            padding: 0 25px;
+        }
+
+        .welcome--icon {
+            width: 55px;
+            height: 55px;
+            background-color: #bc8d44;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+
+            &:before {
+                background-image: url("../images/blog-home/03/icon-cafe.png");
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-repeat: no-repeat;
+                content: "";
+                display: block;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                left: 50%;
+                margin-left: -12.5px;
+                top: 50%;
+                margin-top: -12.5px;
+            }
+        }
+
+        .welcome--box {
+            margin-top: -22.5px;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    .welcome {
+        .welcome--box {
+            margin-top: 0;
+        }
+
+        > .welcome__item {
+            position: absolute;
+            left: 15px;
+            right: 15px;
+            bottom: 12px;
+        }
+    }
+
+    .recipes {
+        .welcome__item {
+            background-image: url("../images/blog-home/03/restaurant-3.png");
+            background-repeat: no-repeat;
+
+            .welcome--icon {
+                &:before {
+                    background-image: url("../images/blog-home/03/icon-recipes.png");
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+    .box-welcome {
+        > div {
+            display: table;
+
+            > div {
+                display: table-cell;
+                height: 100%;
+                float: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .welcome-and-book {
+        .row {
+            margin: 0;
+        }
+
+        .welcome {
+            margin-top: -176px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .box-welcome {
+        > div {
+            > div {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
+        .welcome {
+            margin-top: 0;
+            float: left;
+
+            .welcome__item {
+                width: 100%;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+
+        .meals {
+            clear: both;
+        }
+
+        .recipes {
+            margin-bottom: 0;
+        }
+    }
+
+    .box-welcome {
+        > div {
+            display: table !important;
+
+            > div {
+                display: inherit !important;
+                height: 100%;
+                float: inherit !important;
+            }
+        }
+
+        .welcome {
+            > .welcome__item {
+                position: inherit !important;
+                left: inherit !important;
+                right: inherit !important;
+                bottom: inherit !important;
+            }
+        }
+    }
+}

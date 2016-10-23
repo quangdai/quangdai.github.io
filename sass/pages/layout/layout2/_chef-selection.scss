@@ -1,0 +1,36 @@
+/*==========================
+  --  Chefs Selections --
+===========================*/
+.chef-selection {
+  @media (min-width: 1200px) {
+    position: relative;
+    z-index: 1;
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    &:before {
+      background-image: url("../images/bg-left.png");
+      top: 18%;
+      left: 0;
+      width: 117px;
+      height: 214px;
+    }
+    &:after {
+      background-image: url("../images/bg-right.png");
+      bottom: 24%;
+      right: 0;
+      width: 92px;
+      height: 294px;
+    }
+  }
+}
+.bg-chef {
+  background-image: url("../images/bg-chef.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

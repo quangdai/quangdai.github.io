@@ -1,0 +1,34 @@
+$color-theme: #96b019;
+/*
+elements */
+@import '../sass/theme/elements/elements-theme';
+/*
+Page */
+@import
+// product
+'../sass/theme/pages/product/product-theme',
+// layout
+// header
+'../sass/theme/pages/layout/headers/header-theme',
+//slider,
+'../sass/theme/pages/layout/slider-banner/slider-banner-theme',
+//footer
+'../sass/theme/pages/layout/footers/footer-theme',
+
+// content
+'../sass/theme/pages/layout/contents/banner-link/banner-links-theme',
+'../sass/theme/pages/layout/contents/banners/banner-theme',
+'../sass/theme/pages/layout/contents/blog-home/blog-theme',
+'../sass/theme/pages/layout/contents/new-latest/new-lastest-theme',
+'../sass/theme/pages/layout/contents/support/support-theme',
+'../sass/theme/pages/layout/contents/content-theme',
+
+// blog
+'../sass/theme/pages/blog/blog-theme',
+// check out
+'../sass/theme/pages/checkout/checkout-theme',
+//Cms
+'../sass/theme/pages/cms/about-us-theme',
+'../sass/theme/pages/cms/contact-us';
+
+

@@ -1,0 +1,77 @@
+/*==========================
+  --  Tab Product --
+===========================*/
+.features-product {
+  .tab_product {
+    margin-top: 10px;
+    .nav {
+      border: 0;
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      @include transformX(-50%);
+      .item-tab {
+        a {
+          border: none;
+          color: #c8c8c8;
+          letter-spacing: 4px;
+          font-weight: 400;
+          &:hover, &:active, &:focus {
+            background-color: #fff;
+            border: none;
+          }
+        }
+        &:last-child {
+          margin-right: -15px;
+          &:before {
+            display: none;
+          }
+        }
+        &:before {
+          content: "/";
+          position: absolute;
+          top: 10px;
+          color: #c8c8c8;
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      .nav {
+        .item-tab {
+          margin-right: 30px;
+          &:before {
+            right: -20px;
+          }
+        }
+      }
+    }
+    @media (max-width: 991px) {
+      .nav {
+        .item-tab {
+          margin-right: 10px;
+          a {
+            font-size: 15px!important;
+            letter-spacing: 1px!important;
+          }
+          &:before {
+            font-size: 16px;
+            right: -9px;
+          }
+        }
+      }
+    }
+    @media (max-width: 480px) {
+      .nav {
+        .item-tab {
+          margin-right: 10px;
+          a {
+            padding-left: 0!important;
+            padding-right: 0!important;
+          }
+
+        }
+      }
+    }
+  }
+}
+

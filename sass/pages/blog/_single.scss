@@ -1,0 +1,137 @@
+/*========================
+	Page Blog Single Post
+=========================*/
+.blog-single-post{
+	.list-sidebar{
+		.image{
+			img{
+				width: 100%;
+			}
+		}
+		.item-title{
+			p{
+				letter-spacing: 0.5px;
+				color: #a0a0a0;
+				a{
+					color: #a0a0a0;
+					text-decoration: none;
+				}
+			}
+			h4{
+				text-transform: uppercase;
+				padding-bottom: 28px;
+				border-bottom: 1px solid #ebebeb;
+				letter-spacing: 0.5px;
+			}
+		}
+		.content{
+			p{
+				margin-top: 5px;
+				display: inline-block;
+				line-height: 2;
+				color: #797979;
+			}
+			.item{
+				display: inline-block;
+				margin-top: 15px;
+				margin-top: 25px;
+			}
+		}
+		.author{
+			//border-top: 1px solid #ebebeb;
+			padding-top: 15px;
+			p{
+				color: #929292;
+				letter-spacing: 0.5px;
+				a{
+					text-decoration: none;
+					color: #929292;
+				}
+			}
+			.text-left{
+				p{
+					a{
+						&:hover{
+							color: #fc4242;
+						}
+					}
+				}
+			}
+			.social{
+				li{
+					margin-right: 6px;
+					&:last-child{
+						margin-right: 0;
+						display: inline-block;
+						padding-right: 0;
+					}
+					a{
+						padding: 0 5px;
+						.fa-facebook{
+							color: #46629e;
+						}
+						.fa-twitter{
+							color: #5ea9dd;
+						}
+						.fa-google-plus{
+							color: #a87b5e;
+						}
+						.fa-instagram{
+							color: #a87b5e;
+						}
+						.fa-rss{
+							color: #d84425;
+						}
+						&:hover{
+							i{
+								color: #fe5b10;
+							}
+						}
+					}
+				}
+			}
+		}
+		h4{
+			letter-spacing: -0.5px;
+			color: #4f4f4f;
+		}
+		form{
+			label{
+				color: #4f4f4f;
+				letter-spacing: -0.5px;
+				span{
+					color: #fc4242;
+				}
+			}
+			.form-group{
+				margin-bottom: 22px;
+				input{
+					height: 45px;
+				}
+				.text-comment{
+					.comment{
+						height: 125px;
+					}
+				}
+			}
+			.form-control{
+				border-color: #e1e1e1;
+			}
+			button{
+				background-color: #ffffff;
+			    border-color: #e1e1e1;
+			    font-family: "Playfair Display";
+			    font-size: 15px;
+			    font-weight: 700;
+			    height: 40px;
+			    text-align: center;
+			    text-transform: uppercase;
+			    width: 116px;
+			    letter-spacing: -0.5px;
+			    &:hover{
+			    	color: #fff;
+			    }
+			}
+		}
+	}
+}

@@ -1,0 +1,218 @@
+.newlleter.type1 {
+  .banner-box {
+    &:hover {
+      .block-content {
+        h2 {
+          text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.55);
+        }
+      }
+    }
+  }
+  .subscribe {
+    .form-inline {
+      h4 {
+        position: relative;
+        letter-spacing: 1px;
+        margin: -5px 0 47px 0;
+        &:after {
+          content: "";
+          border-bottom: 3px #96b011 solid;
+          width: 40px;
+          display: inline-block;
+          position: absolute;
+          bottom: -19px;
+          left: 50%;
+          @include transformX(-50%);
+        }
+      }
+      label {
+        letter-spacing: 0.4px;
+        color: #727272;
+        margin-bottom: 26px;
+      }
+      .input-group {
+        padding: 0;
+        width: 80%;
+        position: relative;
+        input {
+          border: none;
+          background-color: #f2f2f2;
+          @include border_radius(3px);
+          height: 47px;
+          color: #8c8c8c;
+          padding-left: 17px;
+          position: relative;
+          z-index: 2;
+          float: none!important;
+          margin-bottom: 0;
+          display: inline-block;
+        }
+        .btn {
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          margin-left: -5px;
+          padding-left: 15px;
+          padding-right: 15px;
+          position: relative;
+          z-index: 10;
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .newlleter {
+    .block-content {
+      right: 69px;
+      position: absolute;
+      top: 49%;
+      left: 0;
+      @include transformY(-50%);
+      display: inline-block;
+      letter-spacing: 1.4px;
+      h2 {
+        margin: 0;
+      }
+    }
+    .subscribe {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 43%;
+      @include transformY(-50%);
+      display: inline-block;
+      height: 90%;
+      border: 2px #96b019 solid;
+      margin-right: 15px;
+      .form-inline {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        @include transformY(-50%);
+        width: 90%;
+        float: right;
+        margin: auto;
+        label {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .newlleter {
+    .block-content {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      display: inline-block;
+    }
+    .subscribe {
+      position: absolute;
+      top: 50%;
+      @include transformY(-50%);
+      display: inline-block;
+      height: 100%;
+      border: 2px #96b019 solid;
+      margin-right: 15px;
+      .form-inline {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        label {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  .newlleter {
+    .subscribe {
+      .input-group {
+          input {
+            width: 68%!important;
+          }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+  .newlleter {
+    .subscribe {
+      width: 48%;
+      .input-group {
+        input {
+          width: 60%!important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 480px) and (max-width: 767px){
+  .newlleter {
+    .subscribe {
+      .input-group {
+        input {
+          width: 60%!important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .newlleter {
+    padding: 0 15px;
+    .subscribe {
+      position: relative;
+      display: inline-block;
+      height: 100%;
+      border: 2px #96b019 solid;
+      margin-right: 0;
+      top: 0;
+      transform: inherit;
+      -webkit-transform:inherit;
+      -ms-transform:inherit;
+      -moz-transform:inherit;
+      width: 100%;
+      padding: 20px;
+      .form-inline {
+        position: relative;
+        top: 0;
+        transform: inherit;
+        label {
+          width: 100%;
+        }
+      }
+      .input-group {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media (max-width: 479px) {
+  .newlleter {
+    .subscribe {
+      .input-group {
+        input {
+          width: 100%!important;
+          margin-bottom: 20px!important;
+        }
+        .btn {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

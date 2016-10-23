@@ -1,0 +1,22 @@
+
+.blog {
+  .blog__content {
+    a {
+      &:after {
+        border-color: $color-theme;
+      }
+    }
+  }
+  .blog__title, .blog__author{
+    a {
+      &:hover {
+        color: $color-theme!important;
+      }
+    }
+  }
+  .blog--comment, .blog--author, .read-more {
+    &:hover {
+      color: $color-theme!important;
+    }
+  }
+}

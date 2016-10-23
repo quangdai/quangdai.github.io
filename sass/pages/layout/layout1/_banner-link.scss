@@ -1,0 +1,80 @@
+﻿%text-banner-link {
+  width: 65%;
+  margin: 0 auto;
+  font-weight: 700;
+}
+%text1 {
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+  padding-bottom: 26px;
+  letter-spacing: 3px;
+  @extend %text-banner-link;
+}
+%text2 {
+  border-top: 1px rgba(0, 0, 0, 0.1) solid;
+  display: block;
+  padding-top: 27px;
+  letter-spacing: 2px;
+  font-style: italic;
+  @extend %text-banner-link;
+}
+%title-banner {
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+  border-top: 1px rgba(0, 0, 0, 0.1) solid;
+  display: inline-block;
+}
+%title-banner-h3 {
+  margin: 15px auto;
+  letter-spacing: 4px;
+}
+.links-banner {
+  .banner__orange {
+    .banner-content {
+      bottom: 40px;
+      .title-banner {
+        margin: 4px auto;
+      }
+    }
+  }
+  .banner__tomato {
+    .banner-content {
+      top: 35px;
+      .title-banner {
+        margin: 5px auto;
+        margin-left: 8px;
+      }
+    }
+  }
+  .banner-box {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    @include transition(1s);
+    &:hover {
+      margin: 0 auto;
+      @include transition(1s);
+      opacity: 0.8;
+    }
+  }
+  .banner-content {
+    h4 {
+      @extend %text1;
+    }
+    span {
+      @extend %text2;
+    }
+    .title-banner {
+      @extend %title-banner;
+      a {
+        @extend %title-banner-h3;
+        text-decoration: none;
+        display: inline-block;
+        @include transition(1s);
+        &:hover {
+          text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.55);
+          @include transition(1s);
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// Theme About Us
+.about-us{
+	.introduce{
+		.avatar{
+		    border-color: $color-theme;
+		}
+		.box-content {
+		    ul{
+		    	&:after{
+		    		background-color: $color-theme;
+		    	}
+		    }
+		}
+	}
+}

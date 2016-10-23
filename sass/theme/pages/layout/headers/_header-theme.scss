@@ -1,0 +1,129 @@
+/*==========================
+  --  Header --
+===========================*/
+.header-container {
+    /*--------------------*/
+    //* Top Bar *
+    .top-bar {
+        .top-search, .top-phone-call, .top-language, .top-currency, .top-account, .top-social, .top-email {
+            a {
+                &:hover {
+                    color: $color-theme !important;
+                }
+            }
+        }
+    }
+    /*--------------------*/
+    //* Header Middle *
+    .header-middle {
+        .nav > li > a {
+            &:hover, &:active, &:focus {
+                border-color: $color-theme;
+            }
+        }
+    }
+
+    .top-mini-cart {
+        .cart-item-title {
+            a {
+                &:hover {
+                    color: $color-theme;
+                }
+            }
+        }
+
+        .position-cart {
+            background-color: $color-theme;
+        }
+    }
+    /*--------------------*/
+    //* Main Menu *
+    .main-menu, .mobile-menu {
+        .nav {
+            li {
+                &:hover {
+                    > a {
+                        color: $color-theme !important;
+                    }
+                }
+
+                a {
+                    &:hover {
+                        color: $color-theme !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        .mean-bar {
+            > a {
+                color:$color-theme;
+                span{
+                    background-color: $color-theme;
+                }
+            }
+        }
+    }
+}
+/*==========================
+  --  Header  Type1 --
+===========================*/
+.header-container.type1 {
+
+    .top-mini-cart {
+        > a {
+            border: 2px solid $color-theme;
+        }
+    }
+}
+/*==========================
+  --  Header  Type2 --
+===========================*/
+.header-container.type2 {
+    /*--------------------*/
+    //* Header Middle *
+    .header-middle {
+        a {
+            &:hover, &:focus, &:active {
+                color: $color-theme;
+            }
+        }
+    }
+}
+/*==========================
+  --  Header  Type3--
+===========================*/
+.header-container.type3 {
+    /*--------------------*/
+    //* Header Middle *
+}
+/*==========================
+  --  Header  Type4--
+===========================*/
+.header-container.type4 {
+    .top-mini-cart {
+        border-color: $color-theme;
+    }
+
+    .list-social {
+        a:hover {
+            i {
+                color: $color-theme;
+            }
+        }
+    }
+
+    .list-link {
+        a {
+            &:hover {
+                color: $color-theme;
+            }
+        }
+    }
+
+    .copy-rights a {
+        color: $color-theme;
+    }
+}
