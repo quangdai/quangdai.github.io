@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/plyr.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <img src="images/banner-product-list.jpg" class="w-100" alt="">
+            <div class="container mt-4">
+                <breadcrumb></breadcrumb>
+                <product_filter></product_filter>
+
+                <div class="row product-list-page">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <home_product_item></home_product_item>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <home_product_item></home_product_item>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <home_product_item></home_product_item>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <home_product_item></home_product_item>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <home_product_item></home_product_item>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <home_product_item></home_product_item>
+                    </div>
+                </div>
+
+                <product_list_pagination></product_list_pagination>
+                <hr>
+
+                <div class="product-related-list">
+                    <div class="title-theme title-type-1 title-center"><h3 class="fs-26">Có thể bạn sẽ thích</h3></div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <cate_product_item></cate_product_item>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <cate_product_item></cate_product_item>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <cate_product_item></cate_product_item>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <myfooter></myfooter>
+    </div>
+    
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+    
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'product_filter': httpVueLoader('product_filter.vue'),
+                'home_product_item': httpVueLoader('home_product_item.vue'),
+                'product_list_pagination': httpVueLoader('product_list_pagination.vue'),
+                'cate_product_item': httpVueLoader('cate_product_item.vue'),
+                
+            },
+        });
+    </script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/plyr.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

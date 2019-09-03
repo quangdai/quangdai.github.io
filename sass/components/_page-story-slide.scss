@@ -1,0 +1,95 @@
+.page-story-slide {
+    overflow: hidden;
+    #story-slide {
+        position: relative;
+    }
+    .owl-stage-outer {
+        overflow: inherit;
+    }
+    .owl-item {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            opacity: 0.6;
+        }
+        .item {}
+        &.active {
+            &::after {
+                opacity: 0;
+            }
+        }
+    }
+    .owl-nav {
+        [class*=owl-] {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 0px;
+            border: none;
+            background: transparent;
+            padding: 0;
+            margin: 0;
+            i {
+                color: #fff;
+                width: 65px;
+                height: 82px;
+                background: #fff;
+                color: #888;
+                font-weight: bold;
+                display: inline-block;
+                border: 1px solid #e5e5e5;
+                line-height: 82px;
+                font-size: 18px;
+            }
+        }
+        .owl-next {
+            right: -50px;
+        }
+        .owl-prev {
+            left: -50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .page-story-slide {
+        .owl-stage-outer {
+            overflow: hidden;
+        }
+        .owl-item {
+            &::after {
+                display: none;
+            }
+        }
+        .owl-nav {
+            button {
+                span {
+                    height: 35px;
+                    width: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    font-size: 18px;
+                    opacity: 0.75;
+                    cursor: pointer;
+                    transition: 0.4s ease-in;
+                    &:hover {
+                        opacity: 1;
+                        transition: 0.4s ease-in;
+                    }
+                }
+            }
+            .owl-next {
+                right: 0;
+            }
+            .owl-prev {
+                left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.home-video{
+    width: 100%;
+    .plyr{
+        width: 100%;
+        button.plyr__control{
+            border: 1px solid #ffffff;
+            background-color: transparent;
+        }
+        .plyr__progress{
+            input{
+                color: #ffffff; 
+            }
+        }
+    }   
+   
+}

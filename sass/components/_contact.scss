@@ -1,0 +1,65 @@
+.contact-page-content{
+    width: 100%;
+    margin-bottom: 90px;
+    .head{
+        background-size: cover cover;
+        width: 100%;
+        height: 227px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-family: 'dpdidot_htfm96medium';
+    }
+    .direct{
+        text-align: left;
+        padding-left: 0;
+        li{
+            margin-top: 42px;
+            a{
+                color: #333333;
+                font-size: 12px;
+                &:hover{
+                    color: #0e023a;
+                }
+            }
+        }
+    }
+    .main{
+        margin-top: 50px;
+        .item{
+            border-top: 1px solid #888888;
+            .dir{
+                color: #333333;
+                text-transform: uppercase;
+                padding: 18px 25px;
+                font-weight: 500;
+                &:hover{
+                    cursor: pointer;
+                }
+                &[aria-expanded="true"]{
+                    i{
+                        transform: rotate(-180deg);
+                        transition: all 0.3s;
+                    }
+                }
+            }
+            .content{
+                padding: 0 25px 0 25px;
+                p:last-child{
+                    padding-bottom: 50px;
+                }
+                p.first-child{
+                    padding-top: 10px;
+                }
+                .wrap{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/plyr.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <div class="container blog-detail mt-4">
+                <div class="new-detail-wrap mt-5 col-lg-8 offset-lg-2">
+                    <breadcrumb></breadcrumb>
+                    <news_detail_header></news_detail_header>
+                    <div class="news-content mt-5">
+                            <p>  Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong những năm 1960 nhờ việc bán những bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong các ứng dụng dàn trang, như Aldus PageMaker.</p> 
+                            <img style="width: 100%;" src="images/demo-news.png" alt="">
+                    </div>
+                    <news_detail_footer></news_detail_footer>
+                </div>
+            </div>
+        </main>
+        <myfooter></myfooter>
+    </div>
+    
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+    
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'product_slide_detail': httpVueLoader('product_slide_detail.vue'),
+                'produt-description': httpVueLoader('produt-description.vue'),
+                'home_product_item': httpVueLoader('home_product_item.vue'),
+                'cate_product_item': httpVueLoader('cate_product_item.vue'),
+                'list-news': httpVueLoader('list-news.vue'),
+                'news_detail_header': httpVueLoader('news_detail_header.vue'),
+                'news_detail_footer': httpVueLoader('news_detail_footer.vue'),
+            },
+        });
+    </script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/plyr.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0&appId=331566710575261&autoLogAppEvents=1"></script>
+</body>
+
+</html>

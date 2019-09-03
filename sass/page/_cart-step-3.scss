@@ -1,0 +1,155 @@
+.cart-pay {
+    .cart-address-info {
+        box-shadow: 0 2px 10px 0 rgba($color: #000000, $alpha: 0.1);
+        padding: 0 25px 25px;
+        .address-info-top {
+            @extend .d-flex,
+            .justify-content-between,
+            .flex-wrap;
+            padding: 25px 0px 20px;
+            h4 {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            a {
+                color: #c9252c;
+            }
+        }
+        .address-info-content {
+            padding: 20px 20px;
+            border: 1px dashed #333;
+            b {
+                color: #2f2f2f;
+            }
+            span {
+                color: #545454;
+                &.add {
+                    display: block;
+                    padding-left: 30px;
+                    background: url(../images/icon-check.png) no-repeat 8px 5px;
+                }
+            }
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .cart-pay-method {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .method-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #355364;
+        }
+        .method-item {
+            margin-top: 15px;
+            @extend .d-flex,
+            .flex-wrap;
+            .icon-check {
+                @include col-w(62px);
+                height: 40px;
+                position: relative;
+                input {
+                    position: absolute;
+                    width: 62px;
+                    height: 62px;
+                    opacity: 0;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+                span {
+                    width: 21px;
+                    height: 21px;
+                    position: absolute;
+                    border-radius: 100px;
+                    border: 1px solid #e5e5e5;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                input:checked~span {
+                    background-color: #c9252c;
+                    box-shadow: inset 0 0 0 4px #fff;
+                }
+            }
+            .method-item-content {
+                width: calc(100% - 62px);
+                b {
+                    color: #111823;
+                }
+                p {
+                    color: #626262;
+                }
+            }
+            p {
+                margin-bottom: 0;
+            }
+            .electronic-wallets {
+                margin: 23px 30px;
+                img {
+                    margin-right: 15px;
+                }
+                a:last-of-type {
+                    img {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .bank-list {
+            width: calc(100% - 23px);
+            margin-left: auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            @extend .d-flex,
+            .flex-wrap;
+            p {
+                color: #c9252c;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .bank-item {
+                @include col-w(25%);
+                position: relative;
+                height: 60px;
+                text-align: center;
+                padding: 0px;
+                input {
+                    position: absolute;
+                    z-index: 1;
+                    cursor: pointer;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                }
+                picture {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid transparent;
+                    padding: 10px;
+                    border-radius: 3px;
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+                input:checked~picture {
+                    border: 1px solid #c9252c;
+                }
+            }
+        }
+    }
+    .pay-method-note {
+        margin-bottom: 30px;
+        display: block;
+        color: #888888;
+    }
+    .color-red {
+        color: #c9252c;
+    }
+}

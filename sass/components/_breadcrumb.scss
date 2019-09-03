@@ -1,0 +1,23 @@
+.main-breadcrumb{
+    margin-bottom: 28px;
+    padding-left: 0;
+    li{
+        display: inline-block;
+    }
+    a{
+        font-size: 14px;
+        color: #333333;
+        &::after{
+            content: '|';
+            margin-left: 5px;
+        }
+    }
+    a.current{
+        pointer-events: none;
+        cursor: default;
+        color: #888888;
+        &:after{
+            content: '';
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@mixin col-w($width) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 $width;
+    flex: 0 0 $width;
+    max-width: $width;
+}
+$theme : #0e023a;

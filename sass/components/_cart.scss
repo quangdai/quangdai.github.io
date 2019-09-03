@@ -1,0 +1,181 @@
+.btn-order{
+    color: #fff;
+    background-color: #c9252c;
+    border: 1px solid #c9252c;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0 40px;
+    display: inline-block;
+    &:hover{
+        color: #ffffff;
+        background-color: darken(#c9252c, 12%);
+    }
+}
+.btn-go-on{
+    color: #333333;
+    border: 1px solid #000000;
+    line-height: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    margin-left: 10px;
+    text-transform: uppercase;
+    &:hover{
+        color: #ffffff;
+        background-color: #000000;
+    }
+}
+.cart-step-1{
+    margin-top: 20px;
+    .table-title, .cart-item{
+        @extend .row;
+        padding-left: 0;
+    }
+    .table-title{
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e5e5e5;
+    }
+    .cart-item{
+        padding-bottom: 15px;
+        padding-top: 5px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .cart-col-5{
+        text-align: right;
+    }
+
+    .p-cart-info{
+        @extend .d-flex, .flex-lg-row, .flex-column;
+        .wrap-img{
+            width: 78px;
+            height: 78px;
+            margin-right: 10px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 1px solid #e5e5e5;
+            }
+        }
+        .detail{
+            @media (min-width: 768px) and (max-width: 992px){
+                margin-top: 7px;
+            }
+        }
+        .p-name{
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #000000;
+            @media (max-width: 767px) {
+                margin: 10px 0;
+            }
+        }
+        .info{
+            font-size: 12px;
+            margin-top: 3px;
+            .size{
+                margin-right: 15px;
+            }
+            .color{
+                display: flex;
+                align-items: center;
+                .show-color{
+                    width: 12px;
+                    height: 12px;
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .action{
+            font-size: 12px;
+            margin-top: 5px;
+            .p-del-cart{
+                color: rgba(238, 70, 31, 255);
+                margin-right: 15px;
+                i{
+                    font-size: 17px;
+                    margin-right: 3px;
+                }
+                &:hover{
+                    color: darken(rgba(238, 70, 31, 255), 15% );
+                }
+            }
+            .p-clip-cart{
+                color: #888888;
+                margin-right: 15px;
+                i{
+                    font-size: 14px;
+                    margin-right: 3px;
+
+                }
+                &:hover{
+                    color: darken(#888888, 15% );
+                }
+            }
+        }
+       
+    }
+    .p-cart-quantity, .p-cart-info-price{
+        span{
+            display: block;
+        }
+        input{
+            max-width: 80px;
+            padding: 4px 8px;
+            border: none;
+            background: #f2f2f2;
+        }
+    }
+    .total-cart{
+        padding-left: 0;
+        padding-top: 12px;
+        padding-bottom: 25px;
+        margin-bottom: 5px;
+    }
+    .p-cart-total{
+        .wrap{
+            display: block;
+            text-align: left;
+            margin-left: 60px;
+            @media (max-width: 1200px){
+                margin-left: 35px;
+            }
+            @media (max-width: 992px){
+                margin-left: unset;
+                display: inline-block;
+            }
+            .sale{
+                .old-price{
+                    text-decoration: line-through;
+                }
+                .discount{
+                    color: #cb242e;
+                }
+            }
+        }
+    }
+    .total-checkout{
+        display: block;
+        text-align: left;
+        margin-left: 60px;
+        @media (max-width: 1200px){
+            margin-left: 35px;
+        }
+        @media (max-width: 992px){
+            margin-left: unset;
+            display: inline-block;
+        }
+    }
+    .suggest{
+        font-size: 12px;
+        margin-right: -15px;
+    }
+    .action-checkout{
+        margin-right: -15px;
+    }
+}

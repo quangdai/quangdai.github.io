@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WT Cart3</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+
+        <main>
+            <div class="container cart-page mt-4">
+                <breadcrumb></breadcrumb>
+                <h2>Thông tin đơn hàng</h2>
+                <div class="cart-step-3">
+                    <div class="tab-step">
+                        <span class="tab-step-item active">THÔNG TIN CÁ NHÂN</span>
+                        <span class="tab-step-item active">Địa chỉ nhận hàng</span>
+                        <span class="tab-step-item active">Thanh toán</span>
+                    </div>
+                </div>
+                <cart-3-order-success></cart-3-order-success>
+            </div>
+        </main>
+
+        <myfooter></myfooter>
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'cartpay': httpVueLoader('cartpay.vue'),
+                'cart-3-order-success': httpVueLoader('cart-3-order-success.vue'),
+                'cartproduct': httpVueLoader('cart-product.vue'),
+                'cartfinish': httpVueLoader('cart-finish.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

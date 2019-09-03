@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WT</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <div class="container cart-page mt-4">
+                <breadcrumb></breadcrumb>
+                <h2>Thông tin đơn hàng</h2>
+                <div class="cart-step-2">
+                    <div class="tab-step">
+                        <span class="tab-step-item">Chi tiết đơn hàng</span>
+                        <span class="tab-step-item active">Thông tin giao hàng</span>
+                        <span class="tab-step-item">Thông tin thanh tóan</span>
+                        <span class="tab-step-item">Hoàn tất hóa đơn</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <cartform></cartform>
+                        </div>
+                        <div class="col-12 col-lg-6 cart-info">
+                            <cartproduct></cartproduct>
+                            <div class="mt-4"></div>
+                            <code-discount></code-discount>
+                            <div class="mt-4"></div>
+                            <ordervalue></ordervalue>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <myfooter></myfooter>
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'cartform': httpVueLoader('cart-form.vue'),
+                'cartproduct': httpVueLoader('cart-product.vue'),
+                'code-discount': httpVueLoader('code-discount.vue'),
+                'ordervalue': httpVueLoader('ordervalue.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
