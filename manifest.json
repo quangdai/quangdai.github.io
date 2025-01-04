@@ -1,0 +1,22 @@
+{
+  "tool.html": {
+    "file": "assets/tool.js",
+    "src": "tool.html",
+    "isEntry": true,
+    "imports": [
+      "_home.js"
+    ]
+  },
+  "_home.js": {
+    "file": "assets/home.js",
+    "css": [
+      "assets/home.css"
+    ]
+  },
+  "_index2.js": {
+    "file": "assets/index2.js",
+    "imports": [
+      "_home.js"
+    ]
+  }
+}

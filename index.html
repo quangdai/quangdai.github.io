@@ -1,1 +1,127 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>demo_pwa</title><link rel=icon type=image/png sizes=32x32 href=/static/img/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/static/img/icons/favicon-16x16.png><!--[if IE]><link rel="shortcut icon" href="/static/img/icons/favicon.ico"><![endif]--><link rel=manifest href=/static/manifest.json><meta name=theme-color content=#4DBA87><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=apple-mobile-web-app-title content=demo_pwa><link rel=apple-touch-icon href=/static/img/icons/apple-touch-icon-152x152.png><link rel=mask-icon href=/static/img/icons/safari-pinned-tab.svg color=#4DBA87><meta name=msapplication-TileImage content=/static/img/icons/msapplication-icon-144x144.png><meta name=msapplication-TileColor content=#000000><link rel=preload href=/static/js/vendor.640ecaf5792494b53a39.js as=script><link rel=preload href=/static/js/app.6a513bedf02e8480041e.js as=script><link rel=preload href=/static/css/app.1d063bc0cd301699760e884e1e4c3379.css as=style><link rel=preload href=/static/js/manifest.2ae2e69a05c33dfc65f8.js as=script><link href=/static/css/app.1d063bc0cd301699760e884e1e4c3379.css rel=stylesheet></head><body><noscript>This is your fallback content in case JavaScript fails to load.</noscript><div id=app></div><script>!function(){"use strict";var o=Boolean("localhost"===window.location.hostname||"[::1]"===window.location.hostname||window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));window.addEventListener("load",function(){"serviceWorker"in navigator&&("https:"===window.location.protocol||o)&&navigator.serviceWorker.register("service-worker.js").then(function(o){o.onupdatefound=function(){if(navigator.serviceWorker.controller){var n=o.installing;n.onstatechange=function(){switch(n.state){case"installed":break;case"redundant":throw new Error("The installing service worker became redundant.")}}}}}).catch(function(o){console.error("Error during service worker registration:",o)})})}();</script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.640ecaf5792494b53a39.js></script><script type=text/javascript src=/static/js/app.6a513bedf02e8480041e.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DDQ - Relax sounds</title>
+
+    <meta name="description" content="if you are stressed out try DDQrelux.Incorporating natural sounds will help you relax more comfortably. If it still doesn't make you happy, order me more beer =))">
+    <meta name="keywords" content="DDQ - Relax sounds, comfortable">
+    <meta name="author" content="Quang Đại">
+
+    <meta property="og:title" content="DDQ - Relax sounds, comfortable">
+    <meta property="og:image" content="http://scontent.fhan2-1.fna.fbcdn.net/v/t39.30808-6/286874472_2355083957967050_2103615556507201626_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_ohc=OvF8WHV1xUgAX8CBJAn&_nc_ht=scontent.fhan2-1.fna&oh=00_AT9qhyVvzENWpzZfKrX4M20Uyac_HoMjg8HgUTnTMYl92w&oe=635BA51A">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <div id="app" class="wrapper mt-0 pt-0">
+        <div class="sound-bg">
+            <div class="main-app position-relative">
+                <h2 class="page-title pb-3 pb-lg-5 mb-0">
+                    DDQ-Soundlax
+                </h2>
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <div class="item-sound">
+                            <a href="javascript:;" class="sound-btn" data-id="gg_rain">
+                                <img src="images/rain.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="item-sound">
+                            <a href="javascript:;" class="sound-btn" data-id="gg_campfire">
+                                <img src="images/fire.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="item-sound">
+                            <a href="javascript:;" class="sound-btn" data-id="gg_frogs">
+                                <img src="images/frog.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="item-sound">
+                            <a href="javascript:;" class="sound-btn" data-id="gg_thunderstorm">
+                                <img src="images/lighting.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="item-sound">
+                            <a href="javascript:;" class="sound-btn" data-id="gg_guitar">
+                                <img src="images/music.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="item-sound">
+                            <a href="javascript:;" class="sound-btn" data-id="gg_whiteNoise">
+                                <img src="images/radio.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="item-sound">
+                            <a href="javascript:;" class="sound-btn" data-id="gg_oceanWaves">
+                                <img src="images/wave.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="item-sound">
+                            <a href="javascript:;" class="sound-btn" data-id="gg_wind">
+                                <img src="images/wind.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <audio loop id="gg_campfire">
+                    <source src="audio/Campfire.mp3" type="audio/mpeg">
+                </audio>
+                <audio loop id="gg_frogs">
+                    <source src="audio/Frogs.mp3" type="audio/mpeg">
+                </audio>
+                <audio loop id="gg_guitar">
+                    <source src="audio/Guitar.mp3" type="audio/mpeg">
+                </audio>
+                <audio loop id="gg_oceanWaves">
+                    <source src="audio/OceanWaves.mp3" type="audio/mpeg">
+                </audio>
+                <audio loop id="gg_rain">
+                    <source src="audio/Rain.mp3" type="audio/mpeg">
+                </audio>
+                <audio loop id="gg_thunderstorm">
+                    <source src="audio/Thunderstorm.mp3" type="audio/mpeg">
+                </audio>
+                <audio loop id="gg_whiteNoise">
+                    <source src="audio/WhiteNoise.mp3" type="audio/mpeg">
+                </audio>
+                <audio loop id="gg_wind">
+                    <source src="audio/Wind.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+
+        $('.sound-btn').click( function(){
+            $(this).stop().toggleClass('active');
+            let soundId = $(this).attr('data-id');
+            if($(this).hasClass('active')){
+                $('#'+soundId).trigger("play");
+            }else{
+                $('#'+soundId).trigger("pause");
+            }
+        });
+    </script>
+</body>
+
+</html>

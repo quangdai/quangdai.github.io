@@ -1,0 +1,1 @@
+import"./home.js";$(document).ready(function(){$("#btn-remove-style").click(function(){var t=$("#input").val();console.log(t);var e=t.replace(/style=(\'|\")([ -0-9a-zA-Z:]*[ 0-9a-zA-Z;]*)*\1/g,"");$("#output").val(e)})});

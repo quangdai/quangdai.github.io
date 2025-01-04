@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyBlackItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyBoldItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyBlack.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyBold.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyLightItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyHeavyItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyHeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyMediumItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyHeavy.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyLight.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroySemiBold.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroySemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyThin.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyMedium.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-Gilroy.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-Gilroy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroyThinItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/gilroy/SVN-GilroySemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroySemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy XLight';
+    src: url('../fonts/gilroy/SVN-GilroyXLight.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyXLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy XBold';
+    src: url('../fonts/gilroy/SVN-GilroyXBoldItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyXBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy XBold';
+    src: url('../fonts/gilroy/SVN-GilroyXBold.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyXBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy XLight';
+    src: url('../fonts/gilroy/SVN-GilroyXLightItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/SVN-GilroyXLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
